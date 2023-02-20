@@ -73,9 +73,58 @@ body {
   padding: 0;
 }
 
+.header__list a {
+  transition: all 300ms;
+}
+
+.header__list a:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
+
 .header__mobile-menu {
   width: 5rem;
   height: 2.2rem;
+}
+
+.header__mobile {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75%;
+  height: 100vh;
+  padding-left: 2rem;
+  z-index: 10;
+  background-color: var(--off-white);
+  transition: all 300ms;
+}
+
+.hidden {
+  transform: translateY(-712px);
+}
+
+.header__mobile img {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.mobile__list {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile__list li {
+  margin-bottom: 2rem;
+}
+
+.mobile__list a {
+  font-size: 1.8rem;
+  color: var(--very-dark-blue-blue);
+  text-decoration: none;
 }
 
 .main__img img {
@@ -112,6 +161,13 @@ body {
   border: none;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
+  transition: all 300ms;
+}
+
+.primary:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  cursor: pointer;
 }
 
 .aside {
@@ -147,6 +203,12 @@ body {
   margin-bottom: 1rem;
   font-family: "Inter Bold";
   font-size: 2rem;
+  transition: all 300ms;
+}
+
+.aside__article h3:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
 }
 
 .aside__article p {
@@ -193,6 +255,12 @@ body {
   margin-top: 0.5rem;
   font-size: 1.8rem;
   font-family: "Inter ExBold";
+  transition: all 300ms;
+}
+
+.review-description h4:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
 }
 
 .review-description p:last-child {
@@ -201,6 +269,8 @@ body {
   color: var(--dark-grayish-blue);
   line-height: 2;
 }
+
+/* Responsive */
 @media (min-width: 481px) {
   .reviews-container {
     display: flex;
