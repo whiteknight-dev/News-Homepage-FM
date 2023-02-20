@@ -68,6 +68,11 @@ body {
   display: none;
 }
 
+.header__list {
+  list-style: none;
+  padding: 0;
+}
+
 .header__mobile-menu {
   width: 5rem;
   height: 2.2rem;
@@ -156,6 +161,7 @@ body {
 
 .reviews {
   width: 100%;
+  max-width: 362px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2.8rem;
@@ -194,4 +200,96 @@ body {
   font-size: 1.5rem;
   color: var(--dark-grayish-blue);
   line-height: 2;
+}
+@media (min-width: 481px) {
+  .reviews-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 630px) {
+  .main__introduction {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main__title {
+    width: 45%;
+  }
+
+  .main__introduction div {
+    width: 52%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Añadir el menu desktop */
+  .header__nav {
+    display: block;
+  }
+
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+  }
+
+  .header__list li {
+    margin-left: 4rem;
+  }
+
+  .header__list a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+  }
+
+  .header__mobile-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 65% 25%;
+    grid-template-areas: 
+    "header header"
+    ". ."
+    "main aside"
+    ". ."
+    "bottom bottom";
+    place-content: center;
+    column-gap: 4rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .main__title {
+    max-width: 276px;
+  }
+
+  .aside {
+    grid-area: aside;
+    margin: 0;
+  }
+
+  .reviews-container {
+    grid-area: bottom;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 4rem;
+  }
 }
