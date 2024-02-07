@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Here](https://github.com/nimrodcode/News-Homepage-FM)
-- Live Site URL: [Here](https://nimrodcode.github.io/News-Homepage-FM/)
+- Solution URL: [Here](https://github.com/whiteknight-dev/News-Homepage-FM)
+- Live Site URL: [Here](https://whiteknight-dev.github.io/News-Homepage-FM/)
 
 ## My process
 
@@ -51,7 +51,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@@fermendoza18](https://www.frontendmentor.io/profile/@fermendoza18)
-
-## Acknowledgments
-
+- Frontend Mentor - [@whiteknight-dev](https://www.frontendmentor.io/profile/whiteknight-dev)
